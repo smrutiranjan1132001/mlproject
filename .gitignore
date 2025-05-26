@@ -177,5 +177,5 @@ cython_debug/
 mlProjenv/
 
 #excluding logs and artifacts
-.logs
-.artifacts/
+logs/
+artifacts/
