@@ -178,4 +178,4 @@ mlProjenv/
 
 #excluding logs and artifacts
 .logs
-.artifacts
+.artifacts/
