@@ -1,18 +1,19 @@
 #!/bin/bash
 
-# Create the .streamlit directory in the home folder
+echo "Setting up Streamlit config..."
+
 mkdir -p ~/.streamlit/
 
-# Write the credentials file
-cat <<EOF > ~/.streamlit/credentials.toml
-[general]
-email = "your-email@example.com"
-EOF
+echo "\
+[general]\n\
+email = \"smruti1132001@gmail.com\"\n\
+" > ~/.streamlit/credentials.toml
 
-# Write the config file
-cat <<EOF > ~/.streamlit/config.toml
-[server]
-headless = true
-enableCORS = false
-port = \$PORT
-EOF
+echo "\
+[server]\n\
+headless = true\n\
+enableCORS = false\n\
+port = \$PORT\n\
+" > ~/.streamlit/config.toml
+
+echo "Streamlit config setup done."
